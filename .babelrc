@@ -1,13 +1,7 @@
 {
   "presets": [
-    "next/babel"
+    "next/babel",
+    "mobx"
   ],
-  "plugins": [
-    [
-      "babel-plugin-styled-components",
-      {
-        "ssr": true
-      }
-    ]
-  ]
+  "plugins": ["babel-plugin-root-import", "babel-plugin-styled-components"]
 }
