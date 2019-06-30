@@ -27,9 +27,10 @@ export default class MyDocument extends Document {
       <html>
         <Head>
           {/* Step 5: Output the styles in the head  */}
+          <link rel='stylesheet' href='/static/fonts/fonts.css' />
           {this.props.styleTags}
         </Head>
-        <body>
+        <body style={{ margin: 0 }}>
           <Main />
           <NextScript />
         </body>

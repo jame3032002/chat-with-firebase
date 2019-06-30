@@ -1,0 +1,9 @@
+@font-face {
+  font-family: "Sarabun";
+  src: url("./Sarabun/Sarabun-Regular.ttf") format('truetype')
+}
+
+@font-face {
+  font-family: "SarabunBold";
+  src: url("./Sarabun/Sarabun-Bold.ttf") format('truetype')
+}
