@@ -5,6 +5,8 @@ import { Comments } from 'styled-icons/fa-solid'
 const ContainerEmptyNotification = styled.span`
   font-family: Sarabun;
   font-size: 1em;
+  padding-top: 20px;
+  padding-bottom: 30px;
 `
 
 const IconComments = styled(Comments)`
