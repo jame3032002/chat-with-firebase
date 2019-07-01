@@ -5,9 +5,6 @@ import NotificationIcon from './NotificationIcon'
 import NotificationList from './NotificationList'
 
 const ContainerNotification = styled.div`
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
   position: relative;
 `
 
