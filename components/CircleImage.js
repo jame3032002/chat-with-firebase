@@ -1,12 +1,10 @@
 import styled from 'styled-components'
 
-const CircleImage = styled.div`
-  background-image: url(${props => props.imageURL});
-  width: 30px;
-  height: 30px;
-  cursor: pointer;
+const CircleImage = styled.img`
+  display: block;
+  height: ${props => props.size || 30}px;
+  width: ${props => props.size || 30}px;
   border-radius: 50%;
-  background-size: cover;
 `
 
 export default CircleImage
