@@ -12,7 +12,7 @@ const ContainerProfileMenu = styled.div`
 const LabelName = styled.div`
   color: white;
   font-size: 0.8em;
-  font-family: 'Sarabun';
+  font-family: Sarabun;
   margin-left: 10px;
 `
 
@@ -24,7 +24,7 @@ const LabelName = styled.div`
 const ProfileMenu = ({ imageURL, name }) => {
   return (
     <ContainerProfileMenu>
-      <CircleImage imageURL={imageURL} />
+      <CircleImage src={imageURL} />
       <LabelName>{name}</LabelName>
     </ContainerProfileMenu>
   )
