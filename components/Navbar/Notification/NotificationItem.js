@@ -2,6 +2,8 @@ import React from 'react'
 import moment from 'moment'
 import styled from 'styled-components'
 
+import CircleImage from '../../CircleImage';
+
 const ItemNotification = styled.li`
   cursor: pointer;
   display: flex;
@@ -19,14 +21,6 @@ const ItemNotification = styled.li`
   &.unread {
     background: #edf2fa
   }
-`
-
-const Image = styled.img`
-  display: block;
-  height: 48px;
-  margin-right: 12px;
-  width: 48px;
-  border-radius: 50%;
 `
 
 const ItemLabel = styled.div`
@@ -73,7 +67,7 @@ const ContainerTimeAgo = styled.span`
 const NotificationItem = ({ unread, imageURL, name, message, lastUpdated }) => {
   return (
     <ItemNotification className={unread ? 'unread' : null}>
-      <Image src={imageURL} />
+      <CircleImage src={imageURL} size={48} style={{ marginRight: 12 }} />
 
       <ContainerMessage>
         <ContainerName>{name}</ContainerName>
